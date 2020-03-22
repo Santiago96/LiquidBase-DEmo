@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost/social_network?useSSL=false&serverTimezone=UTC
+    username: root
+    password: admin
+  jpa:
+    hibernate.ddl-auto: none
+    #generate-ddl: true
+    #show-sql: true
+  liquibase:
+    change-log: classpath:databaseChangeLog.xml
